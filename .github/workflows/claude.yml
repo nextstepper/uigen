@@ -53,12 +53,12 @@ jobs:
                   "command": "npx",
                   "args": [
                     "@playwright/mcp@latest",
-                    "--allowed-orgins",
+                    "--allowed-origins",
                     "localhost:3000;cdn.tailwindcss.com;esm.sh"
                     ]
                   }
                 }
               }
-          
-        allowed_tools: "Bash(npm:*), Bash(sqlite3:*),mpc__playwright__browser, mpc__playwright__snapshot,mcp__playwright__click, mcp__playwright__fill, mcp__playwright__goto"
+
+          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_navigate,mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_fill_form,mcp__playwright__browser_take_screenshot"
 
